@@ -65,3 +65,135 @@
 }
 
 /* ------------------------------------ Course SECTION ------------------------------------ */
+.course-section {
+    margin: 30px;
+}
+
+.course-section-main-title {
+    font-size: 30px;
+    color: #009b4d;
+    font-weight: 900;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.course-section-main-title::before,
+.course-section-main-title::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: #009b4d;
+    margin: 5px;
+}
+
+.course-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-content {
+    width: 300px;
+    height: 450px;
+    border: 2px solid #000;
+    border-radius: 5px;
+
+}
+
+.course-img {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+}
+
+.course-img img,
+.course-img iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.course-title {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.course-desc {
+    padding: 5px;
+    color: #000000bb;
+    font-size: 14px;
+}
+
+.course-price {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.course-btns {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-btn,
+.buy-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.details-btn {
+    background-color: #99004d;
+    border: 2px solid #99004d;
+}
+
+.buy-btn {
+    background-color: #990000;
+    border: 2px solid #990000;
+}
+
+.details-btn:hover,
+.buy-btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1080px) {
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .course-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .course-section {
+        margin: 0;
+    }
+
+    .course-container {
+        margin: 5px;
+        padding: 0;
+    }
+
+    .course-content {
+        width: 100%;
+    }
+
+    .course-img {
+        width: 100%;
+    }
+}
