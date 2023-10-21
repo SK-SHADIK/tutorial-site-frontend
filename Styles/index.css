@@ -1,0 +1,67 @@
+/* ------------------------------------ SLIDER SECTION ------------------------------------ */
+.slider-section {
+    margin: 20px 0;
+    height: 400px;
+    background-image: url('../Images/slider.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.slider-container {
+    background-color: #009b4ebc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slider-section-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slider-section-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+.slider-section-btn {
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+    background-color: #99004d;
+    border: 3px solid #99004d;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.slider-section-btn:hover {
+    background-color: #fff;
+    color: #99004d;
+}
+
+@media screen and (max-width: 480px) {
+    .slider-section {
+        padding: 0;
+    }
+
+    .slider-container {
+        padding: 10px;
+    }
+
+    .slider-section-text {
+        font-size: 14px;
+    }
+}
+
+/* ------------------------------------ Course SECTION ------------------------------------ */
